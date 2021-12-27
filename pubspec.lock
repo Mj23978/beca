@@ -183,6 +183,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  calendar_view:
+    dependency: "direct main"
+    description:
+      name: calendar_view
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.3"
   characters:
     dependency: transitive
     description:
@@ -440,13 +447,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.18.1"
-  flutter_icons:
-    dependency: "direct main"
-    description:
-      path: "../packages/flutter-icons-1.1.1"
-      relative: true
-    source: path
-    version: "1.1.1"
   flutter_launcher_icons:
     dependency: "direct dev"
     description:
@@ -1036,6 +1036,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.26.0"
+  scrollable_positioned_list:
+    dependency: "direct main"
+    description:
+      name: scrollable_positioned_list
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.3"
   shared_preferences:
     dependency: "direct main"
     description:
@@ -1229,7 +1236,7 @@ packages:
       name: syncfusion_flutter_calendar
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "19.2.48"
+    version: "19.4.38"
   syncfusion_flutter_charts:
     dependency: "direct main"
     description:
@@ -1243,14 +1250,14 @@ packages:
       name: syncfusion_flutter_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "19.2.48"
+    version: "19.4.38"
   syncfusion_flutter_datepicker:
     dependency: transitive
     description:
       name: syncfusion_flutter_datepicker
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "19.2.48"
+    version: "19.4.38"
   synchronized:
     dependency: transitive
     description:
@@ -1320,7 +1327,7 @@ packages:
       name: timezone
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.7.0"
+    version: "0.8.0"
   timing:
     dependency: transitive
     description:

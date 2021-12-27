@@ -1,5 +1,6 @@
 name: beca
-description: Highly customizable, feature-packed calendar works like google calendar but with more features.
+description: Highly customizable, feature-packed calendar works like google
+  calendar but with more features.
 
 publish_to: "none"
 version: 1.0.0+1
@@ -12,13 +13,13 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  flutter_icons:
-    path: ../packages/flutter-icons-1.1.1/
+
   animations: ^1.1.2
   badges: ^2.0.1
   beamer: ^1.1.0
   black_hole_flutter: ^0.3.2
   bot_toast: ^3.0.5
+  calendar_view: ^0.0.3
   cached_network_image: ^3.0.0
   csv: ^4.0.3
   cupertino_icons: ^1.0.2
@@ -68,7 +69,8 @@ dependencies:
   rounded_loading_button: ^2.0.5
   shared_preferences: ^2.0.6
   sticky_headers: ^0.1.8
-  syncfusion_flutter_calendar: ^19.2.48
+  scrollable_positioned_list: ^0.2.3
+  syncfusion_flutter_calendar: ^19.4.38
   syncfusion_flutter_charts: ^19.2.44+1
   table_calendar: ^3.0.1
   theme_provider: ^0.5.0
@@ -76,12 +78,12 @@ dependencies:
   validators: ^2.0.0+1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   bloc_test: ^8.0.2
   build_runner: ^2.0.5
   flutter_launcher_icons: ^0.9.0
   flutter_native_splash: ^1.1.9
+  flutter_test:
+    sdk: flutter
   freezed: ^0.14.2
   hive_generator: ^1.1.0
   json_serializable: ^4.1.3
