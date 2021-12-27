@@ -1,13 +1,14 @@
+import 'package:beca/core/notifiers/home_notifier.dart';
+import 'package:beca/core/states/home_states.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:logger/logger.dart';
-import 'package:riverbloc/riverbloc.dart';
 
 import 'auth_provider.dart';
-import 'blocs/home_bloc/home_bloc.dart';
 import 'calendar_provider.dart';
 import 'logger.dart';
 
-final ProviderFamily<Logger, String> logger = Provider.family<Logger, String>((ref, scope) {
+final ProviderFamily<Logger, String> logger =
+    Provider.family<Logger, String>((ref, scope) {
   return getLogger(scope);
 });
 
@@ -31,7 +32,6 @@ final authProvider = ChangeNotifierProvider<AuthProvider>((ref) {
   return AuthProvider();
 });
 
-
-final homeBlocProvider = BlocProvider<HomeBloc, HomeState>(
-  (ref) => HomeBloc(HomeInitialState()),
-);
+final homeProvider = StateNotifierProvider<HomeProvider, HomeState>((ref) {
+  return HomeProvider(HomeState());
+});

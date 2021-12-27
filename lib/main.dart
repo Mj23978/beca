@@ -7,9 +7,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:logger/logger.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:theme_provider/theme_provider.dart';
 
-import 'config/theme/themes.dart';
 import 'utils/keys.dart';
 import 'views/404/not_found_view.dart';
 import 'views/home_view/home_view.dart';
@@ -32,7 +30,7 @@ Future<void> main() async {
 }
 
 class MainApp extends ConsumerWidget {
-  BeamerDelegate initRouter(BuildContext context) {
+  // BeamerDelegate initRouter(BuildContext context) {
     // final authGuard = BeamGuard(
     //   pathBlueprints: ['/game*', '', '/lobby*'],
     //   check: (context, location) => provider.authenticated,
@@ -40,36 +38,18 @@ class MainApp extends ConsumerWidget {
     //       print('failed ${location.state.uri}'),
     //   beamTo: (context) => LoginLocation(),
     // );
-    return BeamerDelegate(
-      locationBuilder: SimpleLocationBuilder(routes: {
-        "/": (context, state) => BeamPage(
-              key: ValueKey('home'),
-              title: 'Home',
-              child: HomeView(),
-            ),
-      }),
-      listener: (state, location) {
-        print("${state.uri}, ${location.toString()}");
-      },
-      notFoundPage:
-          BeamPage(key: const ValueKey("notFound"), child: NotFoundView()),
-      // guards: [authGuard],
-    );
-  }
+  //   return BeamerDelegate(
+  //     notFoundPage:
+  //         BeamPage(key: const ValueKey("notFound"), child: NotFoundView()),
+  //     // guards: [authGuard],
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context, watch) {
     // final auth = watch(authProvider);
     // final router = initRouter(context);
-    return ThemeProvider(
-      defaultThemeId: "light_theme",
-      themes: <AppTheme>[
-        AppTheme.light(id: "light_theme"),
-        AppTheme.dark(id: "dark_theme"),
-        firstCustomTheme(),
-        secondCustomTheme(),
-      ],
-      child: MaterialApp(
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
         localizationsDelegates: [
           TimetableLocalizationsDelegate(),
@@ -80,7 +60,6 @@ class MainApp extends ConsumerWidget {
         home: HomeView(),
         // routerDelegate: router,
         // backButtonDispatcher: BeamerBackButtonDispatcher(delegate: router),
-      ),
     );
   }
 }

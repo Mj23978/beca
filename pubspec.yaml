@@ -16,7 +16,7 @@ dependencies:
     path: ../packages/flutter-icons-1.1.1/
   animations: ^1.1.2
   badges: ^2.0.1
-  beamer: ^0.14.1
+  beamer: ^1.1.0
   black_hole_flutter: ^0.3.2
   bot_toast: ^3.0.5
   cached_network_image: ^3.0.0
@@ -32,7 +32,6 @@ dependencies:
   fl_chart: ^0.36.2
   flash: ^1.5.1
   flex_color_picker: ^2.1.1
-  flutter_bloc: ^7.0.0
   flutter_dynamic_icon: ^2.0.0
   flutter_form_builder: ^6.0.1
   flutter_layout_grid: ^1.0.3
@@ -50,7 +49,7 @@ dependencies:
   grouped_list: ^4.0.0
   hive: ^2.0.4
   hive_flutter: ^1.1.0
-  hooks_riverpod: ^0.14.0+4
+  hooks_riverpod: ^1.0.0
   json_diff: ^0.2.0
   liquid_pull_to_refresh: ^3.0.0
   local_auth: ^1.1.6
@@ -66,7 +65,6 @@ dependencies:
   permission_handler: ^8.1.2
   random_string: ^2.0.1
   readmore: ^1.0.1
-  riverbloc: ^0.5.0
   rounded_loading_button: ^2.0.5
   shared_preferences: ^2.0.6
   sticky_headers: ^0.1.8
